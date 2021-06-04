@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
+
+.customer-review {
+  background-color: #323232; }
+  .customer-review .customer-review-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    height: 435px;
+    display: flex;
+    align-items: center; }
+    .customer-review .customer-review-content .review-content-img {
+      width: 325px;
+      padding-left: 120px;
+      box-sizing: border-box; }
+      .customer-review .customer-review-content .review-content-img .content-img-wrapper {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden; }
+        .customer-review .customer-review-content .review-content-img .content-img-wrapper img {
+          height: 100%; }
+    .customer-review .customer-review-content .review-content-text {
+      color: white;
+      flex: 1;
+      padding: 0 36px;
+      position: relative; }
+      .customer-review .customer-review-content .review-content-text::after {
+        content: "";
+        height: 140px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 1px solid white; }
+      .customer-review .customer-review-content .review-content-text h3 {
+        font-size: 35px;
+        margin: 0 0 35px 0;
+        text-transform: uppercase; }
+      .customer-review .customer-review-content .review-content-text p {
+        font-size: 14px;
+        line-height: 24px; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .customer-review .customer-review-content .review-content-img {
+      width: 225px;
+      padding-left: 40px; } }
+  @media (max-width: 768px) {
+    .customer-review .customer-review-content {
+      flex-direction: column;
+      height: auto;
+      padding: 30px 0;
+      align-items: flex-start; }
+      .customer-review .customer-review-content .review-content-img {
+        margin-bottom: 30px;
+        padding-left: 30px; } }
