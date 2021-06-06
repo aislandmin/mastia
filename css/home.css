@@ -6,80 +6,95 @@ body {
   margin: 0 auto; }
   .mastia-header .header-top {
     background-color: #fffdfd;
-    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-    width: 100%;
-    height: 50px; }
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09); }
     .mastia-header .header-top .header-top-bar {
-      max-width: 1140px;
+      max-width: 1150px;
+      height: 50px;
       display: flex;
       justify-content: space-between;
-      transform: translateY(14px);
+      align-items: center;
       margin: 0 auto; }
       .mastia-header .header-top .header-top-bar .media-icons img {
         margin-right: 13px;
         vertical-align: middle; }
       .mastia-header .header-top .header-top-bar .media-contacts {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly; }
-        .mastia-header .header-top .header-top-bar .media-contacts img {
-          margin-left: 40px; }
-        .mastia-header .header-top .header-top-bar .media-contacts span {
-          margin-left: 8px; }
+        padding: 0;
+        margin: 0; }
+        .mastia-header .header-top .header-top-bar .media-contacts li {
+          margin-left: 30px;
+          float: left; }
+        .mastia-header .header-top .header-top-bar .media-contacts li:nth-of-type(1) {
+          list-style-image: url("../imgs/clock.png"); }
+        .mastia-header .header-top .header-top-bar .media-contacts li:nth-of-type(2) {
+          list-style-image: url("../imgs/phone.png"); }
+        .mastia-header .header-top .header-top-bar .media-contacts li:nth-of-type(3) {
+          list-style-image: url("../imgs/email.png"); }
+      @media (max-width: 800px) {
+        .mastia-header .header-top .header-top-bar {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; } }
   .mastia-header .header-menus {
-    max-width: 1140px;
-    height: 158px;
+    max-width: 1150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .mastia-header .header-menus .div-img {
+      height: 158px;
+      position: relative; }
+      .mastia-header .header-menus .div-img img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
     .mastia-header .header-menus ul {
-      list-style: none; }
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between; }
       .mastia-header .header-menus ul li {
         display: inline-block;
-        margin-left: 30px; }
+        padding-left: 20px; }
         .mastia-header .header-menus ul li a {
           text-decoration: none;
           color: black; }
           .mastia-header .header-menus ul li a:hover {
             color: blue; }
+    @media (max-width: 800px) {
+      .mastia-header .header-menus ul {
+        display: none; } }
   .mastia-header .header-sliders {
     background-image: url("../imgs/background-dervice.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 760px;
-    color: white; }
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     .mastia-header .header-sliders .left-arrow {
-      float: left;
-      margin-left: 29px;
-      margin-top: 380px;
-      transform: translateY(-50%); }
+      margin-left: 29px; }
       .mastia-header .header-sliders .left-arrow img {
         border: 1px solid;
         width: 28px;
         height: 28px;
         padding: 20px; }
     .mastia-header .header-sliders .right-arrow {
-      float: right;
-      margin-right: 29px;
-      margin-top: 380px;
-      transform: translateY(-50%); }
+      margin-right: 29px; }
       .mastia-header .header-sliders .right-arrow img {
         border: 1px solid;
         width: 28px;
         height: 28px;
         padding: 20px; }
     .mastia-header .header-sliders .slider-center {
-      max-width: 1140px;
+      max-width: 1150px;
       text-align: center;
-      margin: 0 auto;
-      padding-top: 314px; }
+      margin: 0 auto; }
       .mastia-header .header-sliders .slider-center h1 {
         font-size: 48px;
         margin: 0 auto; }
       .mastia-header .header-sliders .slider-center .p-discription {
-        width: 50%;
+        width: 60%;
         margin: 0 auto; }
         .mastia-header .header-sliders .slider-center .p-discription p {
           font-size: 14px;
@@ -90,11 +105,23 @@ body {
         border: 1px white solid;
         font-size: 16px;
         padding: 16px 38px; }
+    @media (min-width: 768px) and (max-width: 1150px) {
+      .mastia-header .header-sliders {
+        height: 680px; }
+        .mastia-header .header-sliders .slider-center h1 {
+          font-size: 32px; } }
+    @media (max-width: 768px) {
+      .mastia-header .header-sliders {
+        height: 580px; }
+        .mastia-header .header-sliders .slider-center h1 {
+          font-size: 24px; }
+        .mastia-header .header-sliders .slider-center a {
+          font-size: 12px; } }
 
 .mastia-services {
   background-color: #f8f8f8; }
   .mastia-services ul {
-    max-width: 1140px;
+    max-width: 1150px;
     list-style: none;
     margin: 0 auto 6px auto;
     padding: 86px 0 0 0;
@@ -119,7 +146,7 @@ body {
           margin: 0 auto; }
 
 .mastia-recent-projects {
-  max-width: 1140px;
+  max-width: 1150px;
   margin: 0 auto; }
   .mastia-recent-projects h3 {
     font-size: 35px;
@@ -137,14 +164,14 @@ body {
     justify-content: space-between;
     margin: 28px auto 18px auto; }
     .mastia-recent-projects ul li {
-      display: inline-block; }
+      display: inline-block;
+      width: 30%; }
       .mastia-recent-projects ul li a {
         text-decoration: none; }
         .mastia-recent-projects ul li a div {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-          width: 360px;
           height: 238px; }
     .mastia-recent-projects ul li:nth-of-type(1) a div {
       background-image: url("../imgs/project1.png"); }
@@ -161,42 +188,55 @@ body {
       .mastia-recent-projects .left-right-arrows div img {
         width: 21px;
         height: 21px; }
+  @media (max-width: 768px) {
+    .mastia-recent-projects ul {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 8px; }
+      .mastia-recent-projects ul li {
+        margin-bottom: 10px;
+        width: 60%; } }
 
 .mastia-fun-facts {
-  background-image: url("../imgs/background-dervice.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 235px;
+  background-color: #26a1e4;
   color: white; }
   .mastia-fun-facts .div-facts {
-    max-width: 1140px;
+    max-width: 1150px;
+    height: 235px;
     margin: 0 auto; }
     .mastia-fun-facts .div-facts ul {
       list-style: none;
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
-      padding: 64px 0 0 0; }
+      height: 100%;
+      align-items: center;
+      padding: 0; }
       .mastia-fun-facts .div-facts ul li {
-        display: inline-block; }
+        display: inline-block;
+        width: 263px;
+        flex: 1; }
         .mastia-fun-facts .div-facts ul li .card-fact {
-          text-align: center;
-          width: 263px; }
+          text-align: center; }
           .mastia-fun-facts .div-facts ul li .card-fact h2 {
             font-size: 50px;
             margin: 0; }
           .mastia-fun-facts .div-facts ul li .card-fact p {
-            margin: 0; }
+            margin: 0;
+            font-size: 24px; }
           .mastia-fun-facts .div-facts ul li .card-fact .boundry-line-fact {
             background-color: white;
             width: 40px;
             height: 2px;
-            margin: 21px auto 19px 131.5px;
-            transform: translateX(-50%); }
+            margin: 21px auto 19px auto; }
+  @media (max-width: 768px) {
+    .mastia-fun-facts .div-facts ul li .card-fact h2 {
+      font-size: 32px; }
+    .mastia-fun-facts .div-facts ul li .card-fact p {
+      font-size: 14px; } }
 
 .mastia-from-blog {
-  max-width: 1140px;
+  max-width: 1150px;
   margin: 0 auto; }
   .mastia-from-blog h3 {
     font-size: 35px;
@@ -261,38 +301,70 @@ body {
       .mastia-from-blog .left-right-arrows div img {
         width: 21px;
         height: 21px; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .mastia-from-blog ul {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto 18px auto; }
+      .mastia-from-blog ul li {
+        width: 740px;
+        margin-top: 28px; } }
+  @media (max-width: 768px) {
+    .mastia-from-blog ul {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto 18px auto; }
+      .mastia-from-blog ul li {
+        margin-top: 28px; } }
 
 .mastia-get-in-touch {
-  background-image: url("../imgs/background-dervice.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 120px; }
+  background-color: #26a1e4;
+  height: 120px;
+  display: flex;
+  align-items: center; }
   .mastia-get-in-touch .div-content {
-    max-width: 1140px;
-    padding: 35px;
+    max-width: 1150px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white; }
     .mastia-get-in-touch .div-content .touch-info {
       display: inline-block;
-      font-size: 24px; }
+      font-size: 24px;
+      margin-right: 268px; }
     .mastia-get-in-touch .div-content a {
       text-decoration: none;
       font-size: 14px;
       color: white;
       border: 1px white solid;
       padding: 20px 40px; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .mastia-get-in-touch .div-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mastia-get-in-touch .div-content .touch-info {
+        margin: 0 auto 10px auto; }
+      .mastia-get-in-touch .div-content a {
+        padding: 10px 20px;
+        margin: 0; } }
+  @media (max-width: 768px) {
+    .mastia-get-in-touch .div-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mastia-get-in-touch .div-content .touch-info {
+        margin: 0 auto 10px auto;
+        font-size: 18px; }
+      .mastia-get-in-touch .div-content a {
+        padding: 10px 20px;
+        margin: 0;
+        font-size: 10px; } }
 
 .mastia-footer {
   background-color: #161616;
-  width: 100%;
-  height: 280px;
   color: white; }
   .mastia-footer .footer-links {
-    width: 1140px;
+    max-width: 1150px;
+    height: 280px;
     margin: 0 auto; }
     .mastia-footer .footer-links .first-ul {
       list-style: none;
@@ -314,26 +386,49 @@ body {
         .mastia-footer .footer-links .first-ul .first-ul-li .child-ul {
           list-style: none;
           list-style-image: url("../imgs/right-arrow-blue.png");
-          padding-left: 20px; }
+          padding-left: 20px;
+          line-height: 25px; }
         .mastia-footer .footer-links .first-ul .first-ul-li .child-ul-icon {
           list-style: none;
-          padding-left: 20px; }
+          padding-left: 20px;
+          line-height: 25px; }
           .mastia-footer .footer-links .first-ul .first-ul-li .child-ul-icon li:nth-of-type(1) {
-            list-style-image: url("../imgs/address.png"); }
+            list-style-image: url("../imgs/address-blue.png"); }
+          .mastia-footer .footer-links .first-ul .first-ul-li .child-ul-icon li:nth-of-type(2) {
+            list-style-image: url("../imgs/phone-blue.png"); }
+          .mastia-footer .footer-links .first-ul .first-ul-li .child-ul-icon li:nth-of-type(3) {
+            list-style-image: url("../imgs/email-blue.png"); }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .mastia-footer .footer-links {
+      height: 310px; }
+      .mastia-footer .footer-links .first-ul .first-ul-li {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box; } }
+  @media (max-width: 768px) {
+    .mastia-footer .footer-links {
+      height: 960px; }
+      .mastia-footer .footer-links .first-ul {
+        flex-direction: column;
+        align-items: center; }
+        .mastia-footer .footer-links .first-ul .first-ul-li {
+          width: 450px; } }
 
 .mastia-right-resvered {
-  width: 100%;
-  height: 84px;
   background-color: black;
   color: white; }
   .mastia-right-resvered .right-revered-text {
-    width: 1140px;
+    max-width: 1150px;
+    height: 84px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 36px; }
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .mastia-right-resvered .right-revered-text p {
       display: inline-block;
-      margin-top: 0; }
+      margin: 0; }
     .mastia-right-resvered .right-revered-text img {
       width: 12px;
       height: 12px; }

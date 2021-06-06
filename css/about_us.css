@@ -55,3 +55,179 @@ body {
       .customer-review .customer-review-content .review-content-img {
         margin-bottom: 30px;
         padding-left: 30px; } }
+
+.our-team {
+  background-color: #ffffff; }
+  .our-team .our-team-content {
+    max-width: 1150px;
+    margin: 0 auto; }
+    .our-team .our-team-content h3 {
+      font-size: 32px;
+      color: #26a1e4;
+      margin: 78px 0 49px 0;
+      padding: 0; }
+    .our-team .our-team-content ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0; }
+      .our-team .our-team-content ul li {
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+        margin-bottom: 84px;
+        padding: 0 10px;
+        box-sizing: border-box; }
+        .our-team .our-team-content ul li div {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 358px; }
+        .our-team .our-team-content ul li h4 {
+          font-size: 26px;
+          margin: 23px auto 14px auto; }
+        .our-team .our-team-content ul li p {
+          margin: 0 auto; }
+      .our-team .our-team-content ul li:nth-of-type(1) div {
+        background-image: url("../imgs/project1.png"); }
+      .our-team .our-team-content ul li:nth-of-type(2) div {
+        background-image: url("../imgs/project2.png"); }
+      .our-team .our-team-content ul li:nth-of-type(3) div {
+        background-image: url("../imgs/project3.jpg"); }
+      .our-team .our-team-content ul li:nth-of-type(4) div {
+        background-image: url("../imgs/blog1.jpg"); }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .our-team .our-team-content {
+      text-align: center; }
+      .our-team .our-team-content ul {
+        display: initial; }
+        .our-team .our-team-content ul li {
+          width: 48%;
+          margin-bottom: 78px; } }
+  @media (max-width: 768px) {
+    .our-team .our-team-content {
+      text-align: center; }
+      .our-team .our-team-content ul {
+        flex-direction: column;
+        align-items: center; }
+        .our-team .our-team-content ul li {
+          width: 60%;
+          margin-bottom: 68px; } }
+
+.about-us-get-in-touch {
+  background-color: #26a1e4;
+  height: 120px;
+  display: flex;
+  align-items: center; }
+  .about-us-get-in-touch .div-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    color: white; }
+    .about-us-get-in-touch .div-content .touch-info {
+      display: inline-block;
+      font-size: 24px;
+      margin-right: 268px; }
+    .about-us-get-in-touch .div-content a {
+      text-decoration: none;
+      font-size: 14px;
+      color: white;
+      border: 1px white solid;
+      padding: 20px 40px; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .about-us-get-in-touch .div-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .about-us-get-in-touch .div-content .touch-info {
+        margin: 0 auto 10px auto; }
+      .about-us-get-in-touch .div-content a {
+        padding: 10px 20px;
+        margin: 0; } }
+  @media (max-width: 768px) {
+    .about-us-get-in-touch .div-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .about-us-get-in-touch .div-content .touch-info {
+        margin: 0 auto 10px auto;
+        font-size: 18px; }
+      .about-us-get-in-touch .div-content a {
+        padding: 10px 20px;
+        margin: 0;
+        font-size: 10px; } }
+
+.about-us-footer {
+  background-color: #161616;
+  color: white; }
+  .about-us-footer .footer-links {
+    max-width: 1150px;
+    height: 280px;
+    margin: 0 auto; }
+    .about-us-footer .footer-links .first-ul {
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0; }
+      .about-us-footer .footer-links .first-ul .first-ul-li {
+        flex: 1;
+        width: 260px;
+        font-size: 14px;
+        padding-top: 58px; }
+        .about-us-footer .footer-links .first-ul .first-ul-li h4 {
+          color: #22a7f0;
+          font-size: 20px;
+          margin-top: 0; }
+        .about-us-footer .footer-links .first-ul .first-ul-li p {
+          line-height: 1.737; }
+        .about-us-footer .footer-links .first-ul .first-ul-li .child-ul {
+          list-style: none;
+          list-style-image: url("../imgs/right-arrow-blue.png");
+          padding-left: 20px;
+          line-height: 25px; }
+        .about-us-footer .footer-links .first-ul .first-ul-li .child-ul-icon {
+          list-style: none;
+          padding-left: 20px;
+          line-height: 25px; }
+          .about-us-footer .footer-links .first-ul .first-ul-li .child-ul-icon li:nth-of-type(1) {
+            list-style-image: url("../imgs/address-blue.png"); }
+          .about-us-footer .footer-links .first-ul .first-ul-li .child-ul-icon li:nth-of-type(2) {
+            list-style-image: url("../imgs/phone-blue.png"); }
+          .about-us-footer .footer-links .first-ul .first-ul-li .child-ul-icon li:nth-of-type(3) {
+            list-style-image: url("../imgs/email-blue.png"); }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .about-us-footer .footer-links {
+      height: 310px; }
+      .about-us-footer .footer-links .first-ul .first-ul-li {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box; } }
+  @media (max-width: 768px) {
+    .about-us-footer .footer-links {
+      height: 960px; }
+      .about-us-footer .footer-links .first-ul {
+        flex-direction: column;
+        align-items: center; }
+        .about-us-footer .footer-links .first-ul .first-ul-li {
+          width: 450px; } }
+
+.about-us-right-resvered {
+  background-color: black;
+  color: white; }
+  .about-us-right-resvered .right-revered-text {
+    max-width: 1150px;
+    height: 84px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .about-us-right-resvered .right-revered-text p {
+      display: inline-block;
+      margin: 0; }
+    .about-us-right-resvered .right-revered-text img {
+      width: 12px;
+      height: 12px; }
