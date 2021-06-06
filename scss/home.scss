@@ -1,178 +1,84 @@
-body {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-}
+@import 'common/global.scss';
+@import 'common/header.scss';
+@import 'common/footer.scss';
+$theme-blue: rgb(38, 161, 228);
+.header-sliders {
+  background-image: url("../imgs/background-dervice.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 760px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.mastia-header {
-  margin: 0 auto;
-  .header-top {
-    background-color: rgb(255, 253, 253);
-    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-
-    .header-top-bar {
-      max-width: 1150px;
-      height: 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 auto;
-
-      .media-icons {
-        img {
-          margin-right: 13px;
-          vertical-align: middle;
-        }
-      }
-
-      .media-contacts {
-        padding: 0;
-        margin: 0;
-        li {
-          margin-left: 30px;
-          float: left;
-        }
-        li:nth-of-type(1) {
-          list-style-image: url("../imgs/clock.png");
-        }
-        li:nth-of-type(2) {
-          list-style-image: url("../imgs/phone.png");
-        }
-        li:nth-of-type(3) {
-          list-style-image: url("../imgs/email.png");
-        }
-      }
-
-      @media (max-width: 800px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-      }
+  .left-arrow {
+    margin-left: 29px;
+    img {
+      border: 1px solid;
+      width: 28px;
+      height: 28px;
+      padding: 20px;
     }
   }
 
-  .header-menus {
+  .right-arrow {
+    margin-right: 29px;
+    img {
+      border: 1px solid;
+      width: 28px;
+      height: 28px;
+      padding: 20px;
+    }
+  }
+
+  .slider-center {
     max-width: 1150px;
+    text-align: center;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    .div-img {
-      height: 158px;
-      position: relative;
-
-      img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+    h1 {
+      font-size: 48px;
+      margin: 0 auto;
+    }
+    .p-discription {
+      width: 60%;
+      margin: 0 auto;
+      p {
+        font-size: 14px;
+        margin-bottom: 38px;
+        margin-top: 28px;
       }
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        display: inline-block;
-        padding-left: 20px;
-        a {
-          text-decoration: none;
-          color: black;
-          &:hover {
-            color: blue;
-          }
-        }
-      }
-    }
-
-    @media (max-width: 800px) {
-      ul {
-        display: none;
-      }
+    a {
+      display: inline-block;
+      border: 1px white solid;
+      font-size: 16px;
+      padding: 16px 38px;
     }
   }
 
-  .header-sliders {
-    background-image: url("../imgs/background-dervice.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 760px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .left-arrow {
-      margin-left: 29px;
-      img {
-        border: 1px solid;
-        width: 28px;
-        height: 28px;
-        padding: 20px;
-      }
-    }
-
-    .right-arrow {
-      margin-right: 29px;
-      img {
-        border: 1px solid;
-        width: 28px;
-        height: 28px;
-        padding: 20px;
-      }
-    }
-
+  @media (min-width: 768px) and (max-width: 1150px) {
+    height: 680px;
     .slider-center {
-      max-width: 1150px;
-      text-align: center;
-      margin: 0 auto;
-
       h1 {
-        font-size: 48px;
-        margin: 0 auto;
+        font-size: 32px;
       }
-      .p-discription {
-        width: 60%;
-        margin: 0 auto;
-        p {
-          font-size: 14px;
-          margin-bottom: 38px;
-          margin-top: 28px;
-        }
+    }
+  }
+  @media (max-width: 768px) {
+    height: 580px;
+    .slider-center {
+      h1 {
+        font-size: 24px;
       }
-
       a {
-        display: inline-block;
-        border: 1px white solid;
-        font-size: 16px;
-        padding: 16px 38px;
-      }
-    }
-
-    @media (min-width: 768px) and (max-width: 1150px) {
-      height: 680px;
-      .slider-center {
-        h1 {
-          font-size: 32px;
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      height: 580px;
-      .slider-center {
-        h1 {
-          font-size: 24px;
-        }
-        a {
-          font-size: 12px;
-        }
+        font-size: 12px;
       }
     }
   }
 }
-
 .mastia-services {
   background-color: rgb(248, 248, 248);
 
@@ -221,7 +127,7 @@ body {
     margin-bottom: 20px;
   }
   .boundry-line {
-    background-color: rgb(38, 161, 228);
+    background-color: $theme-blue;
     width: 68px;
     height: 2px;
   }
@@ -376,7 +282,7 @@ body {
     margin-bottom: 20px;
   }
   .boundry-line {
-    background-color: rgb(38, 161, 228);
+    background-color: $theme-blue;
     width: 68px;
     height: 2px;
   }
@@ -429,7 +335,7 @@ body {
             a {
               text-decoration: none;
               font-weight: bold;
-              color: rgb(38, 161, 228);
+              color: $theme-blue;
             }
           }
         }
@@ -549,115 +455,4 @@ body {
   }
 }
 
-.mastia-footer {
-  background-color: rgb(22, 22, 22);
-  color: rgb(255, 255, 255);
 
-  .footer-links {
-    max-width: 1150px;
-    height: 280px;
-    margin: 0 auto;
-
-    .first-ul {
-      list-style: none;
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 0;
-      margin: 0;
-
-      .first-ul-li {
-        width: 260px;
-        font-size: 14px;
-        padding-top: 58px;
-
-        h4 {
-          color: rgb(34, 167, 240);
-          font-size: 20px;
-          margin-top: 0;
-        }
-        p {
-          line-height: 1.737;
-        }
-
-        .child-ul {
-          list-style: none;
-          list-style-image: url("../imgs/right-arrow-blue.png");
-          padding-left: 20px;
-          line-height: 25px;
-        }
-
-        .child-ul-icon {
-          list-style: none;
-          padding-left: 20px;
-          line-height: 25px;
-
-          li:nth-of-type(1) {
-            list-style-image: url("../imgs/address-blue.png");
-          }
-          li:nth-of-type(2) {
-            list-style-image: url("../imgs/phone-blue.png");
-          }
-          li:nth-of-type(3) {
-            list-style-image: url("../imgs/email-blue.png");
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1150px) {
-    .footer-links {
-      height: 310px;
-
-      .first-ul {
-        .first-ul-li {
-          padding-top: 50px;
-          padding-left: 10px;
-          padding-right: 10px;
-          box-sizing: border-box;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .footer-links {
-      height: 960px;
-
-      .first-ul {
-        flex-direction: column;
-        align-items: center;
-
-        .first-ul-li {
-          width: 450px;
-        }
-      }
-    }
-  }
-}
-
-.mastia-right-resvered {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-
-  .right-revered-text {
-    max-width: 1150px;
-    height: 84px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    p {
-      display: inline-block;
-      margin: 0;
-    }
-
-    img {
-      width: 12px;
-      height: 12px;
-    }
-  }
-}

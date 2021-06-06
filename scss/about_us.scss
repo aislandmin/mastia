@@ -1,8 +1,6 @@
-body {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-}
-
+@import 'common/global.scss';
+@import 'common/header.scss';
+@import 'common/footer.scss';
 .customer-review {
   background-color: #323232;
 
