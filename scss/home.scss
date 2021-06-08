@@ -1,7 +1,7 @@
-@import 'common/global.scss';
-@import 'common/header.scss';
-@import 'common/footer.scss';
-$theme-blue: rgb(38, 161, 228);
+@import "common/global.scss";
+@import "common/header.scss";
+@import "common/footer.scss";
+
 .header-sliders {
   background-image: url("../imgs/background-dervice.jpg");
   background-repeat: no-repeat;
@@ -394,65 +394,3 @@ $theme-blue: rgb(38, 161, 228);
     }
   }
 }
-
-.mastia-get-in-touch {
-  background-color: #26a1e4;
-  height: 120px;
-  display: flex;
-  align-items: center;
-
-  .div-content {
-    max-width: 1150px;
-    margin: 0 auto;
-    color: rgb(255, 255, 255);
-
-    .touch-info {
-      display: inline-block;
-      font-size: 24px;
-      margin-right: 268px;
-    }
-    a {
-      text-decoration: none;
-      font-size: 14px;
-      color: rgb(255, 255, 255);
-      border: 1px white solid;
-      padding: 20px 40px;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1150px) {
-    .div-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .touch-info {
-        margin: 0 auto 10px auto;
-      }
-      a {
-        padding: 10px 20px;
-        margin: 0;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .div-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .touch-info {
-        margin: 0 auto 10px auto;
-        font-size: 18px;
-      }
-      a {
-        padding: 10px 20px;
-        margin: 0;
-        font-size: 10px;
-      }
-    }
-  }
-}
-
-

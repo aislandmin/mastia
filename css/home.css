@@ -64,6 +64,48 @@ body {
       .mastia-header .header-menus ul {
         display: none; } }
 
+.mastia-get-in-touch {
+  background-color: #26a1e4;
+  height: 120px;
+  display: flex;
+  align-items: center; }
+  .mastia-get-in-touch .div-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    color: white; }
+    .mastia-get-in-touch .div-content .touch-info {
+      display: inline-block;
+      font-size: 24px;
+      margin-right: 268px; }
+    .mastia-get-in-touch .div-content a {
+      text-decoration: none;
+      font-size: 14px;
+      color: white;
+      border: 1px white solid;
+      padding: 20px 40px; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .mastia-get-in-touch .div-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mastia-get-in-touch .div-content .touch-info {
+        margin: 0 auto 10px auto; }
+      .mastia-get-in-touch .div-content a {
+        padding: 10px 20px;
+        margin: 0; } }
+  @media (max-width: 768px) {
+    .mastia-get-in-touch .div-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mastia-get-in-touch .div-content .touch-info {
+        margin: 0 auto 10px auto;
+        font-size: 18px; }
+      .mastia-get-in-touch .div-content a {
+        padding: 10px 20px;
+        margin: 0;
+        font-size: 10px; } }
+
 .mastia-footer {
   background-color: #161616;
   color: white; }
@@ -391,45 +433,3 @@ body {
       margin: 0 auto 18px auto; }
       .mastia-from-blog ul li {
         margin-top: 28px; } }
-
-.mastia-get-in-touch {
-  background-color: #26a1e4;
-  height: 120px;
-  display: flex;
-  align-items: center; }
-  .mastia-get-in-touch .div-content {
-    max-width: 1150px;
-    margin: 0 auto;
-    color: white; }
-    .mastia-get-in-touch .div-content .touch-info {
-      display: inline-block;
-      font-size: 24px;
-      margin-right: 268px; }
-    .mastia-get-in-touch .div-content a {
-      text-decoration: none;
-      font-size: 14px;
-      color: white;
-      border: 1px white solid;
-      padding: 20px 40px; }
-  @media (min-width: 768px) and (max-width: 1150px) {
-    .mastia-get-in-touch .div-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .mastia-get-in-touch .div-content .touch-info {
-        margin: 0 auto 10px auto; }
-      .mastia-get-in-touch .div-content a {
-        padding: 10px 20px;
-        margin: 0; } }
-  @media (max-width: 768px) {
-    .mastia-get-in-touch .div-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .mastia-get-in-touch .div-content .touch-info {
-        margin: 0 auto 10px auto;
-        font-size: 18px; }
-      .mastia-get-in-touch .div-content a {
-        padding: 10px 20px;
-        margin: 0;
-        font-size: 10px; } }

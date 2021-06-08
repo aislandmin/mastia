@@ -1,7 +1,116 @@
-@import 'common/global.scss';
-@import 'common/header.scss';
-@import 'common/footer.scss';
+@import "common/global.scss";
+@import "common/header.scss";
+@import "common/footer.scss";
+
 #map {
-  height: 200px;
+  height: 420px;
   width: 100%;
+}
+
+.contact-navigation-bar {
+  background-color: #26a1e4;
+  height: 66px;
+
+  .div-navigation-content {
+    max-width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      display: inline-block;
+      font-size: 24px;
+      margin: 0;
+    }
+    div {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+      }
+      span {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .div-navigation-content {
+      h4 {
+        margin-left: 10px;
+      }
+      div {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.mastia-contact-us {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 35px;
+    color: $theme-blue;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  .boundry-line {
+    background-color: $theme-blue;
+    width: 68px;
+    height: 2px;
+    margin-bottom: 50px;
+  }
+
+  .form-area {
+    .input-array {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      input {
+        box-sizing: border-box;
+        width: 48%;
+        height: 49px;
+        padding: 15px;
+        border: 1px solid rgb(215, 215, 215);
+        margin-bottom: 25px;
+        outline: none;
+      }
+    }
+
+    .textara-message {
+      box-sizing: border-box;
+      height: 168px;
+      width: 100%;
+      resize: none;
+      outline: none;
+      padding: 15px;
+      border: 1px solid rgb(215, 215, 215);
+      font-family: Arial;
+      margin-bottom: 32px;
+    }
+
+    .button-submit {
+      margin-bottom: 79px;
+      background-color: $theme-blue;
+      width: 96px;
+      height: 37px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      border: none;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .form-area {
+      margin: 0 10px;
+    }
+  }
 }

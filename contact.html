@@ -8,21 +8,53 @@
       let map;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: -34.397, lng: 150.644 },
+          center: { lat: 43.651, lng: -79.347 },
           zoom: 8,
         });
       }
     </script>
   </head>
   <body>
-    <div id="map"></div>
+    <div class="contact-navigation-bar">
+      <div class="div-navigation-content">
+        <h4>PROJECTS</h4>
+        <div>
+          <a href="">Home</a><span>&#10095;</span><a href="">Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mastia-contact-us">
+      <h3>CONTACT US</h3>
+      <div class="boundry-line"></div>
+      <form class="form-area">
+        <div class="input-array">
+          <input
+            type="text"
+            class="input-first-name"
+            placeholder="First Name"
+          />
+          <input type="text" class="input-last-name" placeholder="Last Name" />
+          <input type="email" class="input-email" placeholder="Your E-Mail" />
+          <input type="url" class="input-website" placeholder="Website" />
+        </div>
+        <textarea class="textara-message" placeholder="Your Message"></textarea>
+        <input type="submit" class="button-submit" value="SEND" />
+      </form>
+    </div>
     
+    <div id="map"></div>
+
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ5QtkRuPhfscwJzvMKRG2_JkaeGYvHgA&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/footer.js"></script>
   </body>
 </html>

@@ -1,6 +1,13 @@
 
 function appendFooter(selector){
   $(selector).append(`
+  <div class="mastia-get-in-touch">
+  <div class="div-content">
+    <div class="touch-info">GO AHEAD AND FIND OUT HOW WE CAN HELP YOU!</div>
+    <a href="">GET IN TOUCH</a>
+  </div>
+ </div>
+
   <div class="mastia-footer">
         <div class="footer-links">
           <ul class="first-ul">
