@@ -316,25 +316,39 @@ body {
       list-style: none;
       margin: 0;
       padding: 0; }
-      .why-and-what .why-and-what-content .why-content ul li {
-        display: flex;
-        align-items: center;
+      .why-and-what .why-and-what-content .why-content ul li.feature-card {
         border: 1px solid #d7d7d7;
         margin-bottom: 14px; }
-        .why-and-what .why-and-what-content .why-content ul li div:nth-of-type(1) {
-          color: #26a1e4;
-          font-weight: bolder;
-          width: 60px;
-          height: 60px;
-          line-height: 62px;
-          padding-left: 25px;
-          box-sizing: border-box;
-          border-right: 1px solid #d7d7d7; }
-        .why-and-what .why-and-what-content .why-content ul li div:nth-of-type(2) {
-          font-size: 16px;
-          flex: 1;
-          box-sizing: border-box;
-          padding-left: 12px; }
+        .why-and-what .why-and-what-content .why-content ul li.feature-card .feature-card-title {
+          display: flex;
+          cursor: pointer;
+          align-items: center; }
+          .why-and-what .why-and-what-content .why-content ul li.feature-card .feature-card-title div:nth-of-type(1) {
+            color: #26a1e4;
+            font-weight: bolder;
+            width: 60px;
+            height: 60px;
+            line-height: 62px;
+            padding-left: 25px;
+            box-sizing: border-box;
+            border-right: 1px solid #d7d7d7; }
+          .why-and-what .why-and-what-content .why-content ul li.feature-card .feature-card-title div:nth-of-type(2) {
+            font-size: 16px;
+            flex: 1;
+            box-sizing: border-box;
+            padding-left: 12px; }
+        .why-and-what .why-and-what-content .why-content ul li.feature-card p {
+          display: none;
+          margin: 20px; }
+        .why-and-what .why-and-what-content .why-content ul li.feature-card.open p {
+          display: block; }
+        .why-and-what .why-and-what-content .why-content ul li.feature-card.open .feature-card-title {
+          border-bottom: 1px solid #d7d7d7; }
+          .why-and-what .why-and-what-content .why-content ul li.feature-card.open .feature-card-title div:nth-of-type(1) {
+            background-color: #26a1e4;
+            color: white;
+            transform: rotate(90deg);
+            transform-origin: center; }
   .why-and-what .why-and-what-content .what-content {
     width: 48%; }
     .why-and-what .why-and-what-content .what-content h3 {

@@ -2,20 +2,16 @@
 @import "common/header.scss";
 @import "common/footer.scss";
 
-.header-sliders {
-  background-image: url("../imgs/background-dervice.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.slider-section{
   height: 760px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  position: relative;
   .left-arrow {
-    margin-left: 29px;
+    position: absolute;
+    left: 29px;
+    top: 50%;
+    transform: translateY(-50%);
     img {
-      border: 1px solid;
+      border: 1px solid white;
       width: 28px;
       height: 28px;
       padding: 20px;
@@ -23,14 +19,39 @@
   }
 
   .right-arrow {
-    margin-right: 29px;
+    position: absolute;
+    right: 29px;
+    top: 50%;
+    transform: translateY(-50%);
     img {
-      border: 1px solid;
+      border: 1px solid white;
       width: 28px;
       height: 28px;
       padding: 20px;
     }
   }
+}
+.header-slider {
+  &.slider1{
+    background-image: url("../imgs/background-dervice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &.slider2{
+    background-image: url("../imgs/blog2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &.slider3{
+    background-image: url("../imgs/blog1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  height: 760px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .slider-center {
     max-width: 1150px;

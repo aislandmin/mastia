@@ -46,9 +46,9 @@ function appendFooter(selector){
                 industry.
               </p>
               <ul class="child-ul-icon">
-                <li>84 Street, City, State 24813</li>
-                <li>+00(123)456 78 90</li>
-                <li>info@yourcompany.com</li>
+                <li class="footer-address">84 Street, City, State 24813</li>
+                <li class="footer-tel">+00(123)456 78 90</li>
+                <li class="footer-email">info@yourcompany.com</li>
               </ul>
             </li>
           </ul>
