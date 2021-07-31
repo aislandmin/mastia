@@ -193,7 +193,7 @@
         li.feature-card {
           border: 1px solid rgb(215, 215, 215);
           margin-bottom: 14px;
-          .feature-card-title{
+          .feature-card-title {
             display: flex;
             cursor: pointer;
             align-items: center;
@@ -214,16 +214,16 @@
               padding-left: 12px;
             }
           }
-          
-          p{
+
+          p {
             display: none;
             margin: 20px;
           }
-          &.open{
-            p{
+          &.open {
+            p {
               display: block;
             }
-            .feature-card-title{
+            .feature-card-title {
               border-bottom: 1px solid rgb(215, 215, 215);
               div:nth-of-type(1) {
                 background-color: $theme-blue;
@@ -232,7 +232,6 @@
                 transform-origin: center;
               }
             }
-            
           }
         }
       }
